@@ -1,0 +1,30 @@
+<template>
+<lightning-card   title="Application From">
+
+<lightning-input type="Date" label="To Date" data-formfield="toDate"></lightning-input>
+
+<lightning-input type="Date" label="From Date" data-formfield="FromField"></lightning-input><br/>
+
+<lightning-button variant= "success" label="Save" onclick={saveHandler}></lightning-button>
+<lightning-datatable
+key-field="Id"
+data={totalData}
+columns={coulmns}
+>
+
+
+</lightning-datatable>
+
+
+
+  <!--- ... <lightning-input type="Date" label="To Date" data-formfield="toDateName"></lightning-input>
+    <lightning-input type="Date" label="From Date" data-formfield="formDateName"></lightning-input><br/>
+    <lightning-button variant="success" label="Save" onclick={ssName}></lightning-button>
+<lightning-datatable
+key-field="Id"
+data={totalData}
+columns={coulmns}
+>
+</lightning-datatable > ------>
+</lightning-card>
+</template>

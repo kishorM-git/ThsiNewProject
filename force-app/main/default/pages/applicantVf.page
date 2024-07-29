@@ -1,0 +1,15 @@
+<apex:page standardController="applicant__c" extensions="Applicant_CX1">
+    <apex:form >
+        <apex:pageblock title="Applicant">
+            <apex:pageblockSection title="Applicant Basic Information">
+                            
+                ID = {!objApp.ID}                        <br/>
+                First Name = {!objApp.first_name__c}     <br/>
+                Last Name = {!objApp.last_name__c}   <br/>
+                Gender = {!objApp.gender__c}           
+             
+            
+            </apex:pageblockSection>
+        </apex:pageblock>
+    </apex:form> 
+</apex:page>

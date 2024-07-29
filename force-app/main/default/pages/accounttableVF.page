@@ -1,0 +1,13 @@
+<apex:page standardController="Account" extensions="accounttableVF_CX" >
+      <apex:pageBlock title="Account">
+          <apex:pageBlockSection title="Account information">
+              <apex:pageBlockTable value="{!alist}" var="blist">
+                  <apex:column value="{!blist.Name}"/>
+                   <apex:column value="{!blist.Type }"/>
+                   <apex:column value="{!blist.Rating }"/>
+  
+  
+            </apex:pageBlockTable>
+        </apex:pageBlockSection>
+       </apex:pageBlock>
+    </apex:page>

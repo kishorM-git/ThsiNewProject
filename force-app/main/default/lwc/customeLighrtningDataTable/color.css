@@ -1,0 +1,14 @@
+.myTable{
+color:darkred;
+
+
+}
+
+
+.slds-text-color_success {
+    color: #008000; /* Green color for active items */
+}
+
+.slds-text-color_error {
+    color: hsl(239, 100%, 50%); /* Red color for inactive items */
+}

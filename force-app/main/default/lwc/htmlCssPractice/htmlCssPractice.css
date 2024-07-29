@@ -1,0 +1,19 @@
+h1 {
+    font-size: 50px;
+    color: rgb(128, 0, 30);
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    margin-right: 150px;
+    margin-left: 100px;
+
+}
+.contentClass{
+    color:green;
+    font-weight: bold;
+}
+ 
+.messageClass{
+    border-top: 1px solid #ccc;
+    width:100%;
+}

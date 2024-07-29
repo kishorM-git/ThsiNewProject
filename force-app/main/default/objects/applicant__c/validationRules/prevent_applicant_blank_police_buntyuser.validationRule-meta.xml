@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>prevent_applicant_blank_police_buntyuser</fullName>
+    <active>false</active>
+    <description>preevnt applicant blank in police verification in bunty user</description>
+    <errorConditionFormula>AND( police_varification__c = FALSE, $User.Id =&apos;0055i000001RR6t&apos;)</errorConditionFormula>
+    <errorDisplayField>police_varification__c</errorDisplayField>
+    <errorMessage>mandatory police verification user bunty</errorMessage>
+</ValidationRule>

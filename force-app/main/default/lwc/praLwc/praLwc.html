@@ -1,0 +1,21 @@
+<template>
+   <lightning-card title="Application from">   
+<lightning-input type="Date" label="From Date" placeholder="From Date" data-formfield="fromDate"></lightning-input>
+<lightning-input type="Date" label="To Date" placeholder="To date" data-formfield="toDate"></lightning-input><br/>
+
+
+
+<lightning-button variant="success" label="Save" onclick={saveHandler}></lightning-button>
+
+<lightning-datatable
+   key-field="id"
+   data={record}
+  
+   columns={columnsList}>
+   
+</lightning-datatable>
+
+
+
+   </lightning-card>
+</template>

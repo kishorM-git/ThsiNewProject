@@ -1,0 +1,17 @@
+<apex:page standardController="Account" extensions="Accountvf_cx" >
+    <apex:pageblock title="Account">
+            <apex:pageblockSection title="Account Table">
+                
+                <apex:pageblockTable value="{!applist}" var="objAcc">
+                    <apex:column value="{!objAcc.Name}"/>
+                    <apex:column value="{!objAcc.Type}"/>
+                    <apex:column value="{!objAcc.Rating}"/>
+                     <apex:column value="{!objAcc.Phone}"/>
+                </apex:pageblockTable>
+                
+                
+            </apex:pageblockSection>
+    </apex:pageblock>      
+
+ 
+</apex:page>

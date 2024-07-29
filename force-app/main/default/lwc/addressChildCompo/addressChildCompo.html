@@ -1,0 +1,20 @@
+<template>
+       <lightning-card title = "Address Record">
+          Select Total Record={selectedRecordsCount}
+
+ 
+              <lightning-datatable
+              key-field="Id"
+              data={addressList}
+              columns={columns}    
+              draft-values={draftValues} 
+              onrowselection={selectedRecordsHandler}                     
+                
+              > 
+  </lightning-datatable>
+  
+
+
+
+       </lightning-card>
+</template>

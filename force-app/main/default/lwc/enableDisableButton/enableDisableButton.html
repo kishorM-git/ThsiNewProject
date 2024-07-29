@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Enable/Disable Button">
+        <lightning-button variant="brand" icon-name="utility:search" label="Search" disabled={disableSearchButtonFlag} onclick={handleSearchButton} ></lightning-button>&nbsp;&nbsp;
+        <lightning-button variant="success" icon-name="utility:edit" label="Edit" disabled={disableEditButtonFlag} onclick={handleEditButton} ></lightning-button>
+         <br/>
+         <template if:true={disableSearchButtonFlag}>
+          you Clicked Serach Button
+        </template>
+        <template if:false={disableSearchButtonFlag}>
+            you Clicked edit Button
+          </template>
+  
+
+
+
+
+
+
+    </lightning-card>
+    
+</template>

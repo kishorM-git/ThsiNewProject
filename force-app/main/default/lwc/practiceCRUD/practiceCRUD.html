@@ -1,0 +1,31 @@
+<template>
+    <lightning-card title="CURD OPRATION">
+<lightning-button variant="Brand" label="Cretate" icon-name="utility:record_create" onclick={createHandler}></lightning-button>
+<lightning-button variant="success" label="Search" icon-name="utility:search"  onclick={searcHandler}></lightning-button>
+<lightning-button variant="Natural" label="Update" icon-name="utility:record_update" onclick={updateHandler}></lightning-button>
+<lightning-button  variant="destructive" label="Delete" icon-name="utility:destructive" onclick={deleteHandler}></lightning-button>
+<lightning-input type="text" data-formfield="accountName" label="Enter Account Name" ></lightning-input> <BR/>
+
+<template if:true={showCreateFlag}>
+    <lightning-button variant="Brand" label="Save" icon-name="utility:record_create" onclick={createNowButtone}></lightning-button>
+
+
+</template>
+<template if:true={showSearchFlag}>
+    <lightning-button variant="success" label="Search" icon-name="utility:search" onclick={serchNowButton}></lightning-button>
+</template>
+<template if:true={showUpdateFlag}>
+
+    <lightning-button variant="Natural" label="Update" icon-name="utility:record_update" onclick={updateNowButton}></lightning-button>
+
+</template>
+<template if:true={showDeleteFlag}>
+    <lightning-button variant="destructive" label="delete" icon-name="utility:delete"></lightning-button>
+
+
+
+</template>
+
+</lightning-card>
+    
+</template>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>prevent_invalid_pan_card</fullName>
+    <active>true</active>
+    <description>invallid pan card number</description>
+    <errorConditionFormula>NOT( REGEX(  pan_card__c  , &quot;[A-Z]{5}[0-9]{4}[A-Z]{1}&quot;) )</errorConditionFormula>
+    <errorDisplayField>pan_card__c</errorDisplayField>
+    <errorMessage>invalid pan card number</errorMessage>
+</ValidationRule>

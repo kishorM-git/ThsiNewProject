@@ -1,0 +1,60 @@
+<template>
+    <lightning-card title="CURD Operation">
+        <lightning-button variant="brand" icon-name="utility:record_create" label="Create" onclick={cretaeButtonHandler}></lightning-button>&nbsp;
+        <lightning-button variant="success" icon-name="utility:search" label="Serach" onclick={serachButtonHandler}></lightning-button>&nbsp;
+        <lightning-button variant="Neutral" icon-name="utility:record_update" label="Upadate" onclick={updateButtonHandler}></lightning-button>&nbsp;
+        <lightning-button variant="destructive" icon-name="utility:delete" label="Delete" onclick={deleteButtonHandler}></lightning-button>&nbsp;
+        
+        <lightning-input type="text" data-fromfiled="accountName" label="Enter Account Name"  value={accountObject.Name}></lightning-input><br/>
+        <template if:true={showInputFieldsFlag}>
+          <lightning-combobox
+               name="Account type"
+               label="Select Acoount Type"
+               value={accountObject.Type}
+                placeholder="Select type"
+                options={typeoptions}
+                onchange={handleTypeChange} ></lightning-combobox><br/>
+
+                <lightning-combobox
+               name="Account sla"
+               label="Select Acoount sla"
+               value={accountObject.SLA__c}
+                placeholder="Select SLA"
+                options={SLAoptions}
+                onchange={handleSLAChange} ></lightning-combobox><br/>
+            
+                <lightning-button variant="brand" icon-name="utility:save" label="Save" onclick={cretaeSaveButtonHandler}></lightning-button>&nbsp;
+
+            </template>
+
+            <template if:true={showserchNowButtonFlag}>
+
+                <lightning-button variant="success" icon-name="utility:search" label="Serach Now" onclick={serachNowButtonHandler}></lightning-button><br/>
+                 Account Name:{accountObject.Name}<br/>
+                 Type:{accountObject.Type}<br/>
+                 SLA:{accountObject.SLA_c}<br/>
+                 Created date:{accountObject.CreatedDate}<br/>
+
+            </template>
+            <template if:true={showUpadateFieldsFlag}>
+                <lightning-combobox
+                name="Account type"
+                label="Select Acoount Type"
+                value={accountObject.Type}
+                 placeholder="Select type"
+                 options={typeoptions}
+                 onchange={handleTypeChange} ></lightning-combobox><br/>
+ 
+                 <lightning-combobox
+                name="Account sla"
+                label="Select Acoount sla"
+                value={accountObject.SLA__c}
+                 placeholder="Select SLA"
+                 options={SLAoptions}
+                 onchange={handleSLAChange} ></lightning-combobox><br/>
+                 <lightning-button variant="success" icon-name="utility:record_update" label="Update Now" onclick={updateNowDownButtonHandler}></lightning-button><br/>
+            </template>
+           
+      </lightning-card>
+    
+</template>

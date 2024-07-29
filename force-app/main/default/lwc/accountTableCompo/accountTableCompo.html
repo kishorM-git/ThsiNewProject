@@ -1,0 +1,48 @@
+<template>
+<lightning-card title="Show Detail Account">
+     <lightning-combobox
+     name=" Account SLA"
+     label="select Account SLA "
+     value={accountObject.SLA__c}
+     placeholder="Select SLA"
+     options={slaOptions}
+     onchange={handleSlaChange} ></lightning-combobox><br/>
+
+
+
+     <lightning-combobox required
+     name=" Account type"
+     label="select Account type "
+     value={accountObject.Type}
+     placeholder="Select type"
+     options={typeOptions}
+     onchange={handleTypeChange} ></lightning-combobox ><br/>
+
+     Total Record Found ={totalRecord}<br/>
+     <template if:true={showTableFlag}>
+     <table class="slds-table slds-table--bordered slds-table--striped">
+          <thead>
+              <tr>
+                  <th scope="col"><span class="slds-truncate" >Account Name </span></th>
+                  <th scope="col"><span class="slds-truncate">Type</span></th>
+                  <th scope="col"><span class="slds-truncate">Rating</span></th>
+                  <th scope="col"><span class="slds-truncate">SlA</span></th>
+                  <th scope="col"><span class="slds-truncate">CreateDate</span></th>
+              </tr>
+          </thead>
+          <tbody>
+           
+                  <template for:each={acclist} for:item="acc">
+                          <tr key={acc.id} style="background-color:#008cff">
+                               <td> {acc.Name} </td>  
+                               <td> {acc.Type} </td> 
+                               <td> {acc.Rating} </td> 
+                               <td> {acc.SLA__c} </td> 
+                               <td> {acc.CreatedDate} </td> 
+                     </tr>
+                    </template>            
+               </tbody>
+          </table>
+     </template>
+     </lightning-card>
+</template>

@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Setter Parent data">
+    <!-- |CALL CHILD NOTMAL -->
+       parent  DATA ={objectData.name} </br>
+        AGE =={objectData.Age}
+    <c-lwc-setter-child detail={objectData}></c-lwc-setter-child>
+    <!-- |CALL CHILD NOTMAL END-->
+
+        <!-- CALL CHILD USING SLOT -->
+        <c-udm-lwc-slot-child>
+            <!-- <p >mai parent val 1 slopt</p>
+            <p >mai parent val 2 slopt</p> -->
+            <p slot="one">mai parent val 1 slopt</p>
+            <p slot="two">mai parent val 2 slopt</p>
+        </c-udm-lwc-slot-child>
+        <!-- CALL CHILD USING SLOT END-->
+
+    
+
+</lightning-card>
+    
+</template>

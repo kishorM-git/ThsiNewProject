@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>basic__c</fullName>
+    <label>basic</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>by barth</fullName>
+                <default>false</default>
+                <label>by barth</label>
+            </value>
+            <value>
+                <fullName>by education</fullName>
+                <default>false</default>
+                <label>by education</label>
+            </value>
+            <value>
+                <fullName>by religon</fullName>
+                <default>false</default>
+                <label>by religon</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

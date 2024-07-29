@@ -1,0 +1,26 @@
+<template>
+     <lightning-card title="Applicant Data Table">
+
+      Select Records={totalRecordSelect}<br/>
+
+      <lightning-button variant="destructive" label="Delete Selected Records" icon-name="utility:delete" title="Destructive action" onclick={deleteButtonHandler} ></lightning-button><br/>
+      <lightning-input type="text" data-fromfield="applicantFirstname"  onkeyup={serachRecordName}  label="Enter First name"></lightning-input>
+  
+ <lightning-datatable
+            key-field="Id"
+            data={applist}
+            columns={columns}    
+            draft-values={draftValues} 
+            onrowselection={selectedRecordsHandler}                     
+            > 
+</lightning-datatable>
+
+
+
+
+
+
+
+
+     </lightning-card>
+</template>

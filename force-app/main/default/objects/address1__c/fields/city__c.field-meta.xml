@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>city__c</fullName>
+    <label>city</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>state__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>city</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Maharashtra</controllingFieldValue>
+            <controllingFieldValue>Bihar</controllingFieldValue>
+            <controllingFieldValue>Chhattisgarh</controllingFieldValue>
+            <controllingFieldValue>Goa</controllingFieldValue>
+            <controllingFieldValue>Gujarat</controllingFieldValue>
+            <controllingFieldValue>Jammu &amp; Kashmir</controllingFieldValue>
+            <valueName>Pune</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Arunachal Pradesh</controllingFieldValue>
+            <controllingFieldValue>Assam</controllingFieldValue>
+            <valueName>Kanpur</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Assam</controllingFieldValue>
+            <controllingFieldValue>Chhattisgarh</controllingFieldValue>
+            <valueName>madras</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Bihar</controllingFieldValue>
+            <valueName>Lucknow</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goa</controllingFieldValue>
+            <controllingFieldValue>Kerala</controllingFieldValue>
+            <valueName>Chennai</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Goa</controllingFieldValue>
+            <controllingFieldValue>Himachal Pradesh</controllingFieldValue>
+            <valueName>Surat</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Haryana</controllingFieldValue>
+            <valueName>Jaipur</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>prevent_symbol_number_first_name_last_na</fullName>
+    <active>false</active>
+    <description>prevent symbol not  allowed  spaical number last number or first number and first name of first letter capital</description>
+    <errorConditionFormula>NOT(REGEX( first_name__c , &quot;[A-Z]{1}.*&quot;))||
+NOT ( REGEX (  first_name__c ,&quot;[a-zA-Z ]*&quot; ))</errorConditionFormula>
+    <errorDisplayField>first_name__c</errorDisplayField>
+    <errorMessage>symbol or digit not allowed and first letter wil be capital</errorMessage>
+</ValidationRule>

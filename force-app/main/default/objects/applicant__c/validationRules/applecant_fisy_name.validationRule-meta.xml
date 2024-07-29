@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>applecant_fisy_name</fullName>
+    <active>false</active>
+    <errorConditionFormula>BEGINS( first_name__c , &apos;as&apos;)</errorConditionFormula>
+    <errorMessage>not use as</errorMessage>
+</ValidationRule>

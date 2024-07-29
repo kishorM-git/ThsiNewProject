@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ddsddsds</fullName>
+    <active>false</active>
+    <description>dsdsds</description>
+    <label>ddsd</label>
+    <picklistValues>
+        <picklist>document_list__c</picklist>
+        <values>
+            <fullName>age</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>phone no</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>roll no</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>gender__c</picklist>
+        <values>
+            <fullName>female</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>male</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>transgender</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

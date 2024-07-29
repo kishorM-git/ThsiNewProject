@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Parent Component">
+        <lightning-button variant="brand" icon-name="utility:search" label="Show Popup" onclick={showPopupModalHandler} ></lightning-button>
+      
+         <template if:true={showpoppupModalflag}>
+
+        <c-popup-modal-compo onpopupevent={receivedPopupModalDataHandler}></c-popup-modal-compo>    
+    </template>
+
+    </lightning-card>
+    
+</template>

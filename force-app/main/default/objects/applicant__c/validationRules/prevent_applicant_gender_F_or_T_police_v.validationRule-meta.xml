@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>prevent_applicant_gender_F_or_T_police_v</fullName>
+    <active>false</active>
+    <description>prevent application   gender is  female or transgender and  police verification is true</description>
+    <errorConditionFormula>AND( 
+
+OR( ISPICKVAL( gender__c , &apos;female&apos;) ,
+
+
+ ISPICKVAL( gender__c ,&apos;transgender&apos;) ) ,
+
+ police_varification__c = true)</errorConditionFormula>
+    <errorMessage>gender can not female or transgender when applicant is eligible for error location police verification</errorMessage>
+</ValidationRule>

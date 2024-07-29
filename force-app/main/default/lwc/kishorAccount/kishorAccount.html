@@ -1,0 +1,21 @@
+<template>
+    <lightning-progress-indicator current-step="4" type="base" has-error="true" variant="base">
+        <lightning-progress-step label="Step 1"   value="1"></lightning-progress-step>
+        <lightning-progress-step label="Step 2" value="2"></lightning-progress-step>
+        <lightning-progress-step label="Step 3" value="3"></lightning-progress-step>
+        <lightning-progress-step label="Step 4" value="4"></lightning-progress-step>
+    </lightning-progress-indicator>
+
+<lightning-card>
+
+<lightning-input data-fromfiled="accountName"  label="Enter Account Name"  type="text" placeholder="Select Name"></lightning-input><br/>
+<lightning-input  data-fromfiled="accountType" label="Enter Account Type" type="text" placeholder="Slect type"></lightning-input>
+<lightning-button  variant="Brand" label="Create" onclick={handlerSow}></lightning-button><br/>
+         id Name= {objaa.Id} <br/>
+          last Name= {objaa.Name} <br/>
+
+</lightning-card>
+
+
+
+</template>

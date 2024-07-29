@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SHAKIRA</fullName>
+    <active>false</active>
+    <errorConditionFormula>$User.Id =&apos;0055i000001RWOY&apos;</errorConditionFormula>
+    <errorMessage>shakira mid not creat record</errorMessage>
+</ValidationRule>

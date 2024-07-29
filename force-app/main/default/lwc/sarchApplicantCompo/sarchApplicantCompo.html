@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Sarch Application">
+        
+        <lightning-input data-formfield="applicantName" type="text" label="Enter ApplicantID"></lightning-input> <br/>
+        <lightning-button variant="brand" icon-name="utility:search" label="Search"  onclick={sarchSubmitButton}></lightning-button><br/>
+        First Name={applicantObjec.first_name__c}<br/>
+        Last Name={applicantObjec.last_name__c}   <br/>
+        gender={applicantObjec.gender__c}<br/>
+        <template if:true={showSpinnerFlag}>
+        <div class="exampleHolder">
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+       
+        </div>
+    </template>
+    </lightning-card>
+</template>

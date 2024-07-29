@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>gender_male</fullName>
+    <columns>NAME</columns>
+    <columns>first_name__c</columns>
+    <columns>last_name__c</columns>
+    <columns>gender__c</columns>
+    <columns>police_varification__c</columns>
+    <columns>special_Mark_on_Body__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>gender__c</field>
+        <operation>equals</operation>
+        <value>male</value>
+    </filters>
+    <filters>
+        <field>police_varification__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>gender male</label>
+</ListView>

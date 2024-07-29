@@ -1,0 +1,36 @@
+<template>
+    <lightning-card- title="Application From">
+
+<lightning-input type="Text" label="Select Input" placeholder="Input" data-formfield="accName"></lightning-input><br/>
+<lightning-button variant="success" label="Save" onclick={saveHandler}></lightning-button><br/>
+
+<template for:each={accNamea} for:item="acc">
+    <tr key={acc.id} style="background-color:#fd4bd9" >
+        <td> {acc.Name} </td>
+       
+        <td> {acc.Id} </td>
+            
+        
+    </tr>
+   
+
+</template>    
+<lightning-datatable
+key-field="Id"
+data={accNamea}
+columns={columns}
+
+
+>
+
+
+
+
+</lightning-datatable>
+<temlate if:true={boleanFlag}>
+<lightning-spinner alternative-text="loding" size="Median"></lightning-spinner>
+   
+</temlate>
+</lightning-card->
+
+</template>

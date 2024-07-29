@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>last_name_mandatory_manager_profile</fullName>
+    <active>false</active>
+    <description>last name must be mandatory manager(profile)</description>
+    <errorConditionFormula>AND( ISBLANK( last_name__c ) , $Profile.Name =&apos;manager&apos;)</errorConditionFormula>
+    <errorDisplayField>last_name__c</errorDisplayField>
+    <errorMessage>last name is mandatory for manager user</errorMessage>
+</ValidationRule>

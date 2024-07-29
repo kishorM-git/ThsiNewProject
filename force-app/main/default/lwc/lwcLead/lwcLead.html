@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Application Catd">
+      
+
+<template if:true={shoepopo}>
+<c-lwc-lead-pop-show onpopupevent={dataShow}></c-lwc-lead-pop-show>
+</template>
+<lightning-datatable
+
+          key-field="Id"
+            data={leadDatas}
+            columns={columns}
+            draft-values={draftValues} 
+            onrowselection={handleRowAction}>
+
+        </lightning-datatable>
+
+
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>gender_logo__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  ISPICKVAL( gender__c ,&apos;male&apos;), 
+IMAGE(&apos;https://truecallerphone-dev-ed--c.documentforce.com/servlet/servlet.ImageServer?id=0155i000000DJ1r&amp;oid=00D5i0000011Xkt&amp;lastMod=1650884009000&apos;,&apos;male logo&apos; , 30, 40),
+
+IF( ISPICKVAL( gender__c ,&apos;female&apos;), 
+
+IMAGE(&apos;https://truecallerphone-dev-ed--c.documentforce.com/servlet/servlet.ImageServer?id=0155i000000DJ1w&amp;oid=00D5i0000011Xkt&amp;lastMod=1650884195000&apos;,&apos;female logo&apos; , 30, 40), 
+
+
+
+IMAGE(&apos;https://truecallerphone-dev-ed--c.documentforce.com/servlet/servlet.ImageServer?id=0155i000000DJ21&amp;oid=00D5i0000011Xkt&amp;lastMod=1650884245000&apos;, &apos;transgender&apos; ,30,40))
+
+
+
+
+
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>gender logo</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

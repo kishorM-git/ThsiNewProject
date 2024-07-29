@@ -1,0 +1,30 @@
+<template>
+    <div class="container">
+    <lightning-card title="Memory game">
+
+        <div class="slds-p-around_medium">
+
+    <section class="score-panel">
+        <span class="moves">{moves}</span> Move(s)
+        <div class="timer">{totalTime}</div>timer
+        <div class="restart" onclick={shuffle}>
+            <i class="fa fa-repeat" aria-hidden="true"></i>
+        </div>
+    </section>
+
+<section class="game-panel">
+    <ul class="deck card-deck grid-container">
+        <template for:each={cards} for:item="card">
+            <li class={card.listClass} type={card.type} key={card.id}>
+                <i class={card.icon}></i>
+            </li>
+        </template>
+    </ul>
+
+
+</section>
+
+        </div>
+</lightning-card>
+</div>
+</template>

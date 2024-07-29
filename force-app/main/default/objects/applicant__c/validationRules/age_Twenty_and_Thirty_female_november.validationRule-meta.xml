@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>age_Twenty_and_Thirty_female_november</fullName>
+    <active>false</active>
+    <description>prevent applicant age must be between 20 and 30 and gender is female and month of dob november</description>
+    <errorConditionFormula>AND( ISPICKVAL( gender__c , &apos;female&apos;) ,
+
+ age__c &gt;=20, age__c &lt;=30,
+ MONTH( date_barth__c ) =11
+ 
+
+
+)</errorConditionFormula>
+    <errorMessage>prevent applicant  not be between 20 and 30 and  gender not be  female and date of barth should not be november</errorMessage>
+</ValidationRule>

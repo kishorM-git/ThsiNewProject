@@ -1,0 +1,73 @@
+<template>
+<!-- DYNAMIC USE -->
+
+<!-- <lightning-card title="Create Record from  Lightning-Record-From">
+    <lightning-record-form
+    object-api-name={objectApiName}
+    fields={fields}
+    onsuccess={successHandler}>
+    </lightning-record-form>
+</lightning-card> -->
+<lightning-card title="Create Record from  Lightning-Record-From">
+    <lightning-record-form
+    object-api-name={object}
+    fields={fields}
+    onsuccess={successHandler}>
+    </lightning-record-form>
+</lightning-card>
+               <!-- DYNAMIC -->
+<!-- <lightning-card title="Display  view Record from  Lightning-Record-From">
+    <lightning-record-form
+    record-id={recordId}
+    object-api-name={objectApiName}
+    fields={fields}>
+    </lightning-record-form>
+</lightning-card> -->
+               <!-- STATIC -->
+<lightning-card title="Display  view Record from  Lightning-Record-From">
+    <lightning-record-form
+    record-id="0015i00000yzy7aAAA"
+    object-api-name={object}
+    fields={fields}>
+    </lightning-record-form>
+</lightning-card>
+                      <!-- DYNAMIC -->
+<!-- <lightning-card title="Display  ReadOnly Record from  Lightning-Record-From">
+    <lightning-record-form
+    record-id={recordId}
+    object-api-name={objectApiName}
+    fields={fields}
+    mode="readOnly">
+    </lightning-record-form>
+</lightning-card> --> 
+                    <!-- STATIC -->
+<lightning-card title="Display ReadOnly Record from  Lightning-Record-From">
+    <lightning-record-form
+    record-id="0015i00000yzy7aAAA"
+    object-api-name={object}
+    fields={fields}
+    mode="readOnly">
+    </lightning-record-form>
+</lightning-card>
+                    <!-- DYNAMIC -->
+<!-- <lightning-card title="Display  EDIT Record from  Lightning-Record-From">
+    <lightning-record-form
+    record-id={recordId}
+    object-api-name={objectApiName}
+    fields={fields}
+    columns="2"
+    mode="edit">
+    </lightning-record-form>
+</lightning-card> --> 
+
+                        <!-- STATIC -->
+<lightning-card title="Edit Record from  Lightning-Record-From">
+    <lightning-record-form
+    record-id="0015i00000yzy7aAAA"
+    object-api-name={object}
+    fields={fields}
+    columns="2"
+    mode="edit">
+    </lightning-record-form>
+</lightning-card>
+</template>

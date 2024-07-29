@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title=" Conatact Record ">
+        <lightning-datatable
+        key-field="id"
+        data={visiableerecord}
+        columns={columns}>
+</lightning-datatable>
+        <div class="slds-var-m-around_large">
+<template if:true={visiableerecord}>
+<template for:each={visiableerecord} for:item="conatact">
+   
+<p key={conatact.id}></p>
+
+
+
+</template>
+
+
+</template>
+<div slot="footer" class="slds-var-m-horizontal_medium">
+
+<c-child-pedination records={totalrecord} onupdate={upateRecord}></c-child-pedination>
+</div>
+</div>
+    </lightning-card>
+</template>

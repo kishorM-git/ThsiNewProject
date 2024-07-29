@@ -1,0 +1,18 @@
+<template>
+ <lightning-card title="Application form">
+  <lightning-input data-formfield="name" type="text" label="Enter Name"></lightning-input> <br/>
+  yes have Entered={name} <br/>
+  <lightning-input data-formfield="firstName" type="text" label="Enter First Name"></lightning-input> <br/>
+  yes have Entered={firstName} <br/>
+  <lightning-input data-formfield="lastName" type="text" label="Enter Last Name"></lightning-input> <br/>
+  yes have Entered={lastName} <br/>
+  <lightning-input data-formfield="contactNO" type="tel" label="Enter ContactNo"></lightning-input> <br/>
+  yes have Entered={contactNO} <br/>
+  <lightning-input data-formfield="emaiID" type="email" label="Enter Emailid"></lightning-input> <br/>
+  yes have Entered={emaiID} <br/>
+  <lightning-button variant="brand" label="Show" title="Primary action" onclick={handleButton} class="slds-m-left_x-small"></lightning-button>
+    <lightning-button variant="brand-outline" label="like" title="Primary action with lighter look" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    <lightning-button variant="destructive-text" label="End" title="Destructive action with a lighter look" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+ 
+ </lightning-card>  
+</template>
